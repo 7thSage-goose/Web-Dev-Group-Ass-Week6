@@ -23,8 +23,8 @@ This project is a replica of an existing portfolio website, built using **HTML**
 
 ## Installation & Usage  
 1. Clone the repository:  
-   ```bash
-   git clone [repository-url]
+   bash
+   git clone [https://github.com/AneleMucavele/Web-Dev-Group-Ass-Week6.git]
 
 
 
