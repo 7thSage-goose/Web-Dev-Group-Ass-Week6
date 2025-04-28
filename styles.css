@@ -5,6 +5,17 @@ Reset and basics */
     box-sizing: border-box;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff; /* Set the body background to white */
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
@@ -18,10 +29,25 @@ body {
 }
 
 /* Header */
-.header {
-    background: #0b1623;
-    color: white;
-    padding: 00px 0;
+header {
+  background: url("../background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background: rgba(1, 45, 58, 0.815); /* Add a blue overlay with 30% opacity */
+  z-index: -1; /* Ensure the overlay is behind the content */
+  pointer-events: none;
 }
 
 .nav {
@@ -142,7 +168,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 80px 0;
+    padding: 00px 0;
 }
 
 .hero-text {
@@ -193,7 +219,8 @@ body {
 }
 
 .hero-image img {
-    width: 400px;
+    width: 350px;
+    height: 500px;
 }
 
 /* About Section */
@@ -387,163 +414,242 @@ body {
 
   /* Skills Section Styles */
 .skills-section {
-    background-color: #ffffff;
-    padding: 80px 0;
-  }
-  
-  .section-title {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 15px;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  
-  .section-subtitle {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 40px;
-    color: #666;
-    font-weight: 400;
-  }
-  
-  .skills-content {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .skills-description {
-    flex: 1;
-    min-width: 300px;
-    padding-right: 40px;
-    color: #666;
-    line-height: 1.6;
-    font-size: 1.1rem;
-  }
-  
-  .skills-list {
-    flex: 1;
-    min-width: 300px;
-  }
-  
-  .skill-item {
-    margin-bottom: 25px;
-  }
-  
-  .skill-name {
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #333;
-  }
-  
-  .skill-bar {
-    height: 8px;
-    background-color: #f0f0f0;
-    border-radius: 4px;
-    overflow: hidden;
-  }
-  
-  .skill-progress {
-    height: 100%;
-    background-color: #2ecc71;
-    border-radius: 4px;
-    transition: width 1s ease-in-out;
-  }
-  
-  /* Skills Section Styles */
+  background-color: #ffffff;
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #666;
+  font-weight: 400;
+}
+
+.skills-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills-list {
+  flex: 1;
+  min-width: 300px;
+}
+
+.skill-item {
+  margin-bottom: 25px;
+}
+
+.skill-name {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.skill-bar {
+  height: 8px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background-color: #2ecc71;
+  border-radius: 4px;
+  transition: width 1s ease-in-out;
+}
+
+ /* Skills Section Styles */
+ .skills-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  text-align: right;
+  margin-bottom: 15px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-subtitle {
+  font-size: 2.5rem;
+  text-align: right;
+  margin-bottom: 40px;
+  color: #666;
+  font-weight: 400;
+}
+
 .skills-section {
-    background-color: #ffffff;
-    padding: 80px 0;
-  }
-  
-  .section-title {
-    font-size: 1.5rem;
-    text-align: right;
-    margin-bottom: 15px;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  
-  .section-subtitle {
-    font-size: 2.5rem;
-    text-align: right;
-    margin-bottom: 40px;
-    color: #666;
-    font-weight: 400;
-  }
-  
-  .skills-content {
+  padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+  .skills-container {
+    display: flex;
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    gap: 50px;
+    padding: 0 20px;
+    gap: 40px;
     align-items: center;
-  }
-  
-  .skills-text {
+}
+
+.skills-left {
     flex: 1;
-    min-width: 50%;
-  }
-  
-  .skills-image {
+}
+
+.skills-right {
     flex: 1;
-    min-width: 45%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  
-  .skills-image img {
+}
+
+.image-split-container {
+    position: relative;
     width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .skills-image img:hover {
-    transform: translateY(-5px);
-  }
-  
-  .skills-description {
-    color: #666;
-    line-height: 1.6;
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-  }
-  
-  .skills-list {
+    height: 600px; /* Adjust height as needed */
+}
+
+.top-part {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 30%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 8px 8px 0 0;
+}
+
+.skills-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 40px;
+  align-items: center;
+}
+
+.skills-left {
+  flex: 1;
+}
+
+.skills-right {
+  flex: 1;
+}
+
+.image-split-container {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Adjust height as needed */
+}
+
+.top-part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 8px 8px 0 0;
+}
+
+image-split-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Adjust this value for spacing */
+  height: 650px; /* Set your desired height */
+}
+
+.top-part {
+  height: 20%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.bottom-part {
+  height: 70%;
+  object-fit: cover;
+  border-radius: 0 0 8px 8px;
+}
+
+.bottom-part {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 58%;
+    object-fit: cover;
+    object-position: center bottom;
+    border-radius: 0 0 8px 8px;
+}
+
+.skills-right h4 {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.skills-right h2 {
+  font-size: 36px;
+  margin-bottom: 150px;
+  color: #333;
+}
+
+.skills-right p {
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.skill-bar {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-percentage {
+  height: 100%;
+  background: #23734a;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+      flex-direction: column;
   }
   
-  .skill-item {
-    margin-bottom: 25px;
+  .skills-left, .skills-right {
+      width: 100%;
   }
-  
-  .skill-name {
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #333;
-  }
-  
-  .skill-bar {
-    height: 8px;
-    background-color: #f0f0f0;
-    border-radius: 4px;
-    overflow: hidden;
-  }
-  
-  .skill-progress {
-    height: 100%;
-    background-color: #2ecc71;
-    border-radius: 4px;
-    transition: width 1s ease-in-out;
-  }
+}
   
   /* Services Section */
 .services-section {
@@ -930,80 +1036,37 @@ body {
     margin: 10px 0 0;
   }
   
-  /* Responsive Design */
-  @media (max-width: 992px) {
-    .logos-container {
-      gap: 30px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .natural-section {
-      padding: 60px 0;
-    }
-    
-    .heading-group {
-      margin-bottom: 40px;
-    }
-    
-    .natural-section h1 {
-      font-size: 3.8rem;
-    }
-    
-    .natural-section h2 {
-      font-size: 2.4rem;
-    }
-    
-    .natural-section h3 {
-      font-size: 2rem;
-    }
-    
-    .natural-section h4 {
-      font-size: 1.4rem;
-    }
-    
-    .logos-container {
-      gap: 20px;
-    }
-    
-    .logo-item {
-      flex: 0 1 150px;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .natural-section {
-      padding: 50px 0;
-    }
-    
-    .natural-section h1 {
-      font-size: 3rem;
-    }
-    
-    .natural-section h2 {
-      font-size: 1.8rem;
-      letter-spacing: 3px;
-    }
-    
-    .natural-section h3 {
-      font-size: 1.6rem;
-    }
-    
-    .natural-section h4 {
-      font-size: 1.1rem;
-      letter-spacing: 5px;
-    }
-    
-    .logos-container {
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
-    }
-    
-    .logo-item {
-      flex: 1;
-    }
-  }
+  /* certification */
+.certifications {
+  background-color: #3b8168; /* Green background */
+  padding: 40px 20px;
+}
+
+.certifications__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* In case of smaller screens */
+}
+
+.certifications__container img {
+  max-width: 90px;
+  height: auto;
+  filter: brightness(0) invert(1); /* Make logos white */
+  opacity: 0.9;
+}
+
+.certifications__container img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+ 
+/* Add this to your existing CSS */
+.certifications {
+  margin-bottom: 4rem; /* Using rem units for better scalability */
+}
 
   /* Transition between sections */
 .success-story-section {
@@ -1019,7 +1082,7 @@ body {
 .ui-footer {
     background-color: #010813; /* Navy blue */
     color: #ffffff;
-    padding: 10px 0 10px;
+    padding: 40px 0 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
