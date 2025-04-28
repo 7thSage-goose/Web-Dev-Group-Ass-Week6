@@ -21,7 +21,7 @@ body {
 .header {
     background: #0b1623;
     color: white;
-    padding: 20px 0;
+    padding: 00px 0;
 }
 
 .nav {
@@ -49,7 +49,7 @@ body {
 .nav-links .btn {
     background: #00c897;
     padding: 8px 20px;
-    border-radius: 5px;
+    border-radius: 25px;
 }
 
 /* Navigation Controls */
@@ -179,7 +179,7 @@ body {
     padding: 10px 20px;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
 }
 
 .hero-buttons .btn-secondary,
@@ -189,7 +189,7 @@ body {
     color: #00c897;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
 }
 
 .hero-image img {
