@@ -13,13 +13,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #fff; /* Set the body background to white */
+  background: #fff; 
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #fffdfd;
 }
 
 .container {
@@ -30,12 +30,19 @@ body {
 
 /* Header */
 header {
-  background: url("../background.jpg") no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
-  height: 100vh;
-  width: 100vw;
+  height: auto;
+  width: auto;
   position: relative;
+  /* Background image with blend effect */
+background: 
+linear-gradient(135deg, rgba(2, 26, 61, 0.4) 0%, rgba(23, 42, 58, 0.8) 100%),
+url('images/background.jpg') no-repeat center center;
+background-size: cover;
+background-blend-mode: multiply;
+filter: brightness(1);
+
 }
 
 header::before {
@@ -44,8 +51,8 @@ header::before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80%;
-  background: rgba(1, 45, 58, 0.815); /* Add a blue overlay with 30% opacity */
+  height: 100%;
+  background: rgba(1, 45, 58, 0.815); 
   z-index: -1; /* Ensure the overlay is behind the content */
   pointer-events: none;
 }
@@ -146,7 +153,7 @@ header::before {
     display: block;
 }
 
-/* Navigation Arrows (keep these styles from previous implementation) */
+/* Navigation Arrows */
 .navigation-arrows {
     position: fixed;
     right: 20px;
@@ -273,6 +280,28 @@ header::before {
     font-weight: bold;
 }
 
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons p {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+  color: var(--text-color);
+}
+
+.social-icons a {
+  color: #1b7a5a; 
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #022f18; 
+  transform: translateY(-2px);
+}
+
 .services-section {
     background-color: #f5f5f5;
     padding: 60px 0;
@@ -366,38 +395,49 @@ header::before {
   }
   
   .service-icon {
+    margin-right: auto; 
     margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-color);
+    border-radius: 50%;
   }
-  
-  .service-svg {
-    width: 48px;
-    height: 48px;
-    color: #2ecc71;
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
-  
-  .service-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #222;
-  }
-  
-  .service-card p {
-    color: #666;
-    line-height: 1.6;
-  }
+    
+    .service-svg {
+      width: 48px;
+      height: 48px;
+      color: #065728;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    
+    .service-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #222;
+    }
+    
+    .service-card p {
+      color: #666;
+      line-height: 1.6;
+    }
+    
+    .more-services {
+      margin-top: 20px;
+    }
   
   .more-services {
     margin-top: 20px;
   }
   
   .more-link {
-    background-color: #2ecc71;
-    color: white;
+    color: rgb(5, 95, 51);
     padding: 10px 20px;
     border-radius: 4px;
     text-decoration: none;
@@ -521,7 +561,7 @@ header::before {
 .image-split-container {
     position: relative;
     width: 100%;
-    height: 600px; /* Adjust height as needed */
+    height: 600px; 
 }
 
 .top-part {
@@ -555,7 +595,7 @@ header::before {
 .image-split-container {
   position: relative;
   width: 100%;
-  height: 600px; /* Adjust height as needed */
+  height: 600px; 
 }
 
 .top-part {
@@ -569,11 +609,11 @@ header::before {
   border-radius: 8px 8px 0 0;
 }
 
-image-split-container {
+.image-split-container {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Adjust this value for spacing */
-  height: 650px; /* Set your desired height */
+  gap: 15px; 
+  height: 650px; 
 }
 
 .top-part {
@@ -723,7 +763,7 @@ image-split-container {
   .image-column img {
     width: 100%;
     border-radius: 0px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    
   }
   
   /* Responsive Design */
@@ -735,6 +775,7 @@ image-split-container {
     .image-column {
       grid-column: span 2;
       margin-top: 30px;
+  
     }
   }
   
@@ -875,7 +916,7 @@ image-split-container {
 
   /* Success Story Section */
 .success-story-section {
-    background-color: #f5f5f5; /* Grey background */
+    background-color: #f5f5f5; 
     padding: 80px 0;
     text-align: center;
   }
@@ -987,7 +1028,7 @@ image-split-container {
 
  /* Natural Massage SPA Section */
 .natural-section {
-    background-color: #148177; /* Green background */
+    background-color: #148177; 
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -1038,7 +1079,7 @@ image-split-container {
   
   /* certification */
 .certifications {
-  background-color: #3b8168; /* Green background */
+  background-color: #3b8168; 
   padding: 40px 20px;
 }
 
@@ -1048,13 +1089,13 @@ image-split-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap; /* In case of smaller screens */
+  flex-wrap: wrap;
 }
 
 .certifications__container img {
   max-width: 90px;
   height: auto;
-  filter: brightness(0) invert(1); /* Make logos white */
+  filter: brightness(0) invert(1); 
   opacity: 0.9;
 }
 
@@ -1063,24 +1104,24 @@ image-split-container {
   opacity: 1;
 }
  
-/* Add this to your existing CSS */
+
 .certifications {
-  margin-bottom: 4rem; /* Using rem units for better scalability */
+  margin-bottom: 4rem; 
 }
 
   /* Transition between sections */
 .success-story-section {
-    margin-bottom: 0; /* Remove any bottom margin */
-    padding-bottom: 100px; /* Adjust as needed */
+    margin-bottom: 0; 
+    padding-bottom: 100px;
   }
   
   .natural-section {
-    margin-top: 0; /* Remove any top margin */
+    margin-top: 0; 
   }
 
   /* UI Portfolio Footer */
 .ui-footer {
-    background-color: #010813; /* Navy blue */
+    background-color: #010813; 
     color: #ffffff;
     padding: 40px 0 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1115,7 +1156,7 @@ image-split-container {
   
   .contact-info i {
     margin-right: 12px;
-    color: #64ffda; /* Teal accent */
+    color: #64ffda; 
     width: 20px;
     text-align: center;
     font-size: 1rem;
@@ -1125,16 +1166,16 @@ image-split-container {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;         /* Row layout */
-    justify-content: center; /* Center horizontally */
-    align-items: center;     /* Center vertically */
-    gap: 20px;              /* Space between items */
+    display: flex;         
+    justify-content: center; 
+    align-items: center;    
+    gap: 20px;              
   }
   
   .footer-contact .contact-info li {
     display: flex;
     align-items: center;
-    gap: 8px; /* Space between icon and text */
+    gap: 8px; 
   }
   
   
@@ -1201,11 +1242,11 @@ image-split-container {
     font-size: inherit;
     letter-spacing: 2px;
     font-family: inherit;
-    border-right: 3px solid; /* Cursor effect */
+    border-right: 3px solid; 
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    width: max-content; /* Prevents unwanted wrapping */
+    width: max-content; 
     animation: typing-deleting 4s steps(18) infinite;
 }
 
