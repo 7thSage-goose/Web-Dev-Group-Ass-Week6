@@ -26,7 +26,16 @@ This project is a replica of an existing portfolio website, built using **HTML**
    bash
    git clone [https://github.com/AneleMucavele/Web-Dev-Group-Ass-Week6.git]
 
+2. Navigate into the project directory:
+cd Web-Dev-Group-Ass-Week6
 
+3. Open the project:
+start index.html   # Windows  
+open index.html    # macOS  
+xdg-open index.html  # Linux  
+
+## Live Demo
+Check out the live version here: [Live Demo](https://anelemucavele.github.io/Web-Dev-Group-Ass-Week6/)
 
 
    ## Contact Us  
