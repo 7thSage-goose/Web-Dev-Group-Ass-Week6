@@ -17,28 +17,37 @@ This project is a replica of an existing portfolio website, built using **HTML**
 ## Features  
 - Fully responsive design  
 - Modern portfolio layout  
-- **Typewriter effect for dynamic text animations**  
+- Typewriter effect for dynamic text animations
 - Clean and structured codebase  
 - Replication of an existing portfolio with slight refinements  
 
 ## Installation & Usage  
-1. Clone the repository:  
-   bash
+1. Clone the repository:
+   
+   ```bash
    git clone [https://github.com/AneleMucavele/Web-Dev-Group-Ass-Week6.git]
+   ```
+3. Navigate into the project directory:
+   ```bash
+   cd Web-Dev-Group-Ass-Week6
+   
+4. Open the project:
 
-2. Navigate into the project directory:
-cd Web-Dev-Group-Ass-Week6
-
-3. Open the project:
-start index.html   # Windows  
-open index.html    # macOS  
-xdg-open index.html  # Linux  
+```bash
+start index.html   # Windows
+   ```
+```bash
+open index.html    # macOS
+```
+```bash  
+xdg-open index.html  # Linux
+```  
 
 ## Live Demo
 Check out the live version here: [Live Demo](https://anelemucavele.github.io/Web-Dev-Group-Ass-Week6/)
 
 
-   ## Contact Us  
+ ## Contact Us  
 
 We’d love to hear from you! If you have any questions, feedback, or collaboration ideas, feel free to reach out to any of our contributors:  
 
