@@ -2,13 +2,18 @@ Reset and basics */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    order-box: border-box;
 }
 
 * {
   scroll-behavior: smooth;
 }
 /* General Styles */
+
+.logo {
+  color: #edeff1; /* Blue color */
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -48,7 +53,7 @@ filter: brightness(1);
 header::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 0; /* Adjust as needed */
   left: 0;
   width: 100%;
   height: 100%;
@@ -84,6 +89,15 @@ header::before {
     padding: 8px 20px;
     border-radius: 25px;
 }
+
+.wrapping .text {
+    font-size: 6rem;
+    margin-bottom: -20px;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    text-stroke: 4px white;
+    font-family: "Poppins", sans-serif;
+  }
 
 /* Navigation Controls */
 .nav-controls {
@@ -180,16 +194,19 @@ header::before {
 
 .hero-text {
     flex: 1;
+    color: #fff;
 }
 
 .hero-text h1 {
     font-size: 36px;
     margin-bottom: 10px;
+    color: #fff;
 }
 
 .hero-text h2 {
     font-size: 48px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .hero-text span {
@@ -219,7 +236,7 @@ header::before {
 .about-buttons .btn-secondary {
     background: transparent;
     border: 1px solid #00c897;
-    color: #00c897;
+    color: #e5e7e6;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 25px;
@@ -377,7 +394,7 @@ header::before {
     flex-wrap: wrap;
     gap: 30px;
     max-width: 1200px;
-    margin: 0 auto 40px;
+    margin: 0 auto -30px;
   }
   
   .service-card {
@@ -1080,7 +1097,7 @@ header::before {
   /* certification */
 .certifications {
   background-color: #3b8168; 
-  padding: 40px 20px;
+  padding: 30px 20px;
 }
 
 .certifications__container {
