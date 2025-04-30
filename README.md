@@ -7,9 +7,10 @@ This project is a replica of an existing portfolio website, built using **HTML**
 
 | Profile | Name |
 |---------|------|
-| ![@AneleMucavele](https://github.com/AneleMucavele.png?size=25) | [@AneleMucavele](https://github.com/AneleMucavele) |
-| ![@Lerato](https://github.com/your-github-username.png?size=25) | [@Lerato](https://github.com/the7thsage376) |
-| ![@Bongane](https://github.com/Bongane0606.png?size=25). | .[@Bongane](https://github.com/Bongane0606). |
+| ![@AneleMucavele](https://github.com/AneleMucavele.png?size=10) | [@AneleMucavele](https://github.com/AneleMucavele) |
+| ![@Lerato](https://github.com/your-github-username.png?size=10) | [@Lerato](https://github.com/the7thsage376) |
+| ![@Bongane](https://github.com/Bongane0606.png?size=10). | .[@Bongane](https://github.com/Bongane0606). |
+| ![@Thandolwethu](https://github.com/7thSage-goose.png?size=10). | .[@Thandolwethu](https://github.com/7thSage-goose). |
 
 ## Technologies Used  
 - **HTML** – Structuring content  
