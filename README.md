@@ -4,12 +4,12 @@
 This project is a replica of an existing portfolio website, built using **HTML**, **CSS**, and **Bootstrap** to enhance styling and responsiveness.  
 
 ## Contributors  
-## Contributors
 
 | Profile | Name |
 |---------|------|
-| ![@AneleMucavele](https://github.com/AneleMucavele.png?size=50) | [@AneleMucavele](https://github.com/AneleMucavele) |
-| ![@Lerato](https://github.com/your-github-username.png?size=50) | [@Lerato](https://github.com/the7thsage376) |
+| ![@AneleMucavele](https://github.com/AneleMucavele.png?size=25) | [@AneleMucavele](https://github.com/AneleMucavele) |
+| ![@Lerato](https://github.com/your-github-username.png?size=25) | [@Lerato](https://github.com/the7thsage376) |
+| ![@Bongane](https://github.com/Bongane0606.png?size=25). | .[@Bongane](https://github.com/Bongane0606). |
 
 ## Technologies Used  
 - **HTML** – Structuring content  
