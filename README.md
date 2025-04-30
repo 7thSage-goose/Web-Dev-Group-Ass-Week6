@@ -36,14 +36,17 @@ This project is a replica of an existing portfolio website, built using **HTML**
    
 4. Open the project:
 
+### Windows
 ```bash
-start index.html   # Windows
+start index.html
    ```
+### macOS
 ```bash
-open index.html    # macOS
+open index.html
 ```
+### Linux
 ```bash  
-xdg-open index.html  # Linux
+xdg-open index.html
 ```  
 
 ## Live Demo
